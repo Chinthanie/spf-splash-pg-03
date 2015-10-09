@@ -1,0 +1,89 @@
+
+body {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background: none;
+}
+
+.full {
+  background: url(../images/spf-hompage-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar, navbar-inverse, navbar-fixed-top {
+    background-color: #d75f00;
+    border: 0px; 
+
+}
+
+.col-md-7, .col-sm-12 {
+    background-color: rgba(255,255,255,0.7);
+    padding: 30px 30px;  
+    /*float: right; */
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+}
+
+.row {
+    margin-top: 100px;
+
+}
+/*TEXT FORMATTING*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    color: #d75f00;
+    text-transform: uppercase;
+    text-align: center
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    margin-top: 47px;
+    margin-bottom: 10px;
+    color: white;    
+}
+
+p {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+button {
+    font-weight: 400;
+
+}
+
+.container{
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#bg{
+    
+        background: url(../images/spf-hompage-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+

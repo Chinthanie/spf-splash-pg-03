@@ -1,0 +1,126 @@
+/* Paul Irish box-sizing to correct the box model */
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+#container,
+nav,
+body,
+html {
+    border: none;
+}
+
+/* Clearfix */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/* LAYOUT */
+
+body {
+    margin: 50px;
+    background: none;
+    overflow-x: scroll;
+    
+}
+
+#bg {
+    background: url(../images/spf-hompage-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
+    left: 50px;
+    right: 50px;
+}
+
+.content {
+    background-color: rgba(255,255,255,0.9);
+    padding: 10px 30px;
+    position: fixed;
+    margin-left: 50px;
+    bottom: 50px;
+    right: 50px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+    max-width: 800px;
+}
+/*TEXT FORMATTING*/
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 35px;
+    color: #d75f00;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 47px;
+    margin-bottom: 10px;
+    color: white;
+    float: right
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    color: grey;
+}
+
+
+@media screen and (max-width:767px) {
+    
+    .content {
+        position: static;
+        margin-left: 0;
+        margin-top: 30px;
+        
+    }
+    
+    img {
+        display: block;
+        margin: auto;
+    
+    }
+}
