@@ -78,6 +78,7 @@ section {
     max-width: 800px;
 }
 
+
 /*TEXT FORMATTING*/
 
 * {
@@ -109,6 +110,14 @@ p {
     color: grey;
 }
 
+@media screen and (min-width:768px) {
+    .logo {
+        display: block;
+        margin: auto;
+        float: left;
+        
+    }
+}
 
 @media screen and (max-width:767px) {
     header {
@@ -126,8 +135,9 @@ p {
         
     }
     
-    img {
+    .logo {
         display: block;
+        float: none;
         margin: auto;
     }
 
