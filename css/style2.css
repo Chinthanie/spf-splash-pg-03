@@ -77,6 +77,7 @@ section {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
     max-width: 800px;
 }
+
 /*TEXT FORMATTING*/
 
 * {
@@ -110,17 +111,31 @@ p {
 
 
 @media screen and (max-width:767px) {
-    
+    header {
+        background-color: #d75f00;
+        opacity: 0.9;
+        margin: -50px -50px;
+        padding: 20px 50px 20px 50px;
+        position: static;    
+    }
+
     .content {
         position: static;
         margin-left: 0;
-        margin-top: 30px;
+        margin-top: 100px;
         
     }
     
     img {
         display: block;
         margin: auto;
+    }
+
     
+    
+    h3 {
+        margin-top: 20px;
+        text-align: center;
+
     }
 }
